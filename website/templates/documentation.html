@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+{% include '_head.html' %}
+
+<body class="main">
+
+  {% include '_navbar.html' %}
+
+  <!-- Header -->
+  <section class="hero">
+    <div class="hero-body has-text-centered">
+      <p class="title">
+        PhysCov
+      </p>
+      <p class="subtitle">
+        Documentation
+      </p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <div class="container">
+    <div class="block">
+      <h1 class="title">Getting Started</h1>
+      <h2 class="subtitle">
+        This is a subtitle which can be used.
+      </h2>
+      This text is within can be <b>bold</b>, <u>underlined</u>, or <i>italics</i>. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+      <center>
+        <video controls>
+          <source src="{{url_for('static', filename='videos/example.mp4')}}" type="video/mp4">
+        </video>
+      </center>
+    </div>
+
+    <div class="block">
+      <h1 class="title">Starting STOMP</h1>
+      <h2 class="subtitle">
+        This is a subtitle which can be used.
+      </h2>
+      This text is within can be <b>bold</b>, <u>underlined</u>, or <i>italics</i>. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+      
+      <center>
+        <video controls>
+          <source src="{{url_for('static', filename='videos/example.mp4')}}" type="video/mp4">
+        </video>
+      </center>
+    </div>
+
+  </div>
+
+  {% include '_footer.html' %}
+
+</body>
+
+</html>

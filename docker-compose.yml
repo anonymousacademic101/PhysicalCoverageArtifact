@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  webdocs:
+    build: ./website
+    command: python3 app.py
+    ports:
+      - "8000:8000"
+  physcov:
+    build: ./physcov
+    entrypoint: /bin/bash
+    volumes:
+      - ./data_subset/:/physcov/data_subset

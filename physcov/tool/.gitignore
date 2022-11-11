@@ -1,0 +1,33 @@
+# Pyre type checker
+.pyre/
+
+# Compiled sources
+*.pyc
+
+# Setup
+**.egg*
+
+# Jupyter notebooks
+**.ipynb_checkpoints*
+
+# Sphinx documentation
+_build
+
+# Editor files
+.idea
+
+# Test files
+.pytest_cache
+.cache
+
+# Outputs
+output/
+logs/
+*.npy
+*.pkl
+tmp1/
+tmp2/
+
+.DS_Store
+
+misc/
