@@ -29,6 +29,20 @@ def documentation():
     Shows the documentation page
     """
     return render_template('documentation.html')     
+
+@app.route('/paper_appendix')
+def appendix():
+    """
+    Shows the appendix page
+    """
+    return render_template('appendix.html')     
+
+@app.route('/generating_results')
+def results():
+    """
+    Shows the results page
+    """
+    return render_template('results.html')     
     
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True)

@@ -9,12 +9,12 @@ do
     # Run the script
     if [ $# -eq 2 ]
     then
-        python3 preprocess_physcov.py --scenario highway_random --cores 120 --total_samples $1  --beam_count $totallines --distribution $2
+        python3 preprocess_physcov.py --scenario highway_random --cores 4 --total_samples $1  --beam_count $totallines --distribution $2
     fi
 
     if [ $# -eq 3 ]
     then
-        python3 preprocess_physcov.py --scenario highway_random --cores 120 --total_samples $1  --beam_count $totallines --distribution $2 --data_path $3
+        python3 preprocess_physcov.py --scenario highway_random --cores 4 --total_samples $1  --beam_count $totallines --distribution $2 --data_path $3
     fi
 
 done
